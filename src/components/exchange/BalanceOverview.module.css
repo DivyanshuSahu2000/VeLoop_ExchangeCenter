@@ -1,0 +1,54 @@
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+  margin-top: 16px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 24px;
+  border: 1px solid var(--vl-line);
+  border-radius: var(--vl-radius);
+  background: linear-gradient(135deg, var(--vl-surface), #1a1d33);
+}
+
+.gems {
+  box-shadow: inset 4px 0 0 rgba(139, 108, 240, 0.7);
+}
+
+.ves {
+  box-shadow: inset 4px 0 0 rgba(242, 193, 78, 0.8);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--vl-muted);
+  font-size: 0.95rem;
+}
+
+.value {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.ves .value {
+  color: var(--vl-gold-soft);
+}
+
+.caption {
+  color: var(--vl-muted);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

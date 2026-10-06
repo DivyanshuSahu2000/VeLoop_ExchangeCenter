@@ -1,0 +1,54 @@
+:root {
+  --vl-bg: #161827;
+  --vl-surface: #1d2038;
+  --vl-surface-2: #252a4a;
+  --vl-line: rgba(201, 207, 230, 0.14);
+  --vl-line-strong: rgba(201, 207, 230, 0.28);
+  --vl-text: #eef0fb;
+  --vl-muted: #a7adcc;
+  --vl-gold: #f2c14e;
+  --vl-gold-soft: #fbe08a;
+  --vl-violet: #8b6cf0;
+  --vl-blue: #4f8cf0;
+  --vl-green: #2fbf8a;
+  --vl-orange: #f0913a;
+  --vl-danger: #f0707a;
+  --vl-radius: 20px;
+  --vl-max-width: 1240px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--vl-bg);
+  color: var(--vl-text);
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--vl-gold-soft);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,64 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.badgeArea {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 18px;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbe08a, #f2c14e);
+  color: #241a05;
+  box-shadow: 0 0 0 8px rgba(242, 193, 78, 0.15), 0 0 40px rgba(242, 193, 78, 0.35);
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--vl-gold-soft);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.line {
+  margin-top: 10px;
+  color: var(--vl-muted);
+}
+
+.reward {
+  margin-top: 4px;
+  color: var(--vl-gold-soft);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.button {
+  width: 100%;
+  margin-top: 26px;
+  padding: 13px 14px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fbe08a, #f2c14e);
+  color: #241a05;
+  font-weight: 700;
+}
