@@ -2,13 +2,13 @@
 
 A frontend redesign of the VELOOP Rewards **Exchange Center**, where users convert earned **Gems** into **VEs** through predefined reward conversions. It is a reward conversion experience, not a crypto swap: there are no prices, charts or trading controls.
 
-**Live demo:** _add your Vercel/Netlify URL here after deploying_
+**Live demo:** (https://veloopexchangecenter.vercel.app/)
 
 ![Desktop](screenshots/desktop.png)
 
 ## Exchange Center Concept
 
-A "reward vault": a violet Gem drops through a golden ring and comes out as a VE coin. Every conversion card repeats that story (Gem → arrow → VE coin), so the meaning is clear at a glance: *I'm converting rewards I've earned into VEs.* Palette: deep navy on the `#161827` app background, gold, controlled violet and silver.
+A "reward vault": a violet Gem drops through a golden ring and comes out as a VE coin. Every conversion card repeats that story (Gem → arrow → VE coin), so the meaning is clear at a glance: _I'm converting rewards I've earned into VEs._ Palette: deep navy on the `#161827` app background, gold, controlled violet and silver.
 
 ## Features
 
@@ -26,12 +26,12 @@ A "reward vault": a violet Gem drops through a golden ring and comes out as a VE
 
 Values live in `src/data/exchangeData.js`, never in JSX.
 
-| Conversion | Required Gems | VEs received |
-| --- | --- | --- |
-| Daily Gem Conversion | 28 | 151 |
-| Reward Conversion | 39 | 168 |
-| Value Conversion | 57 | 255 |
-| Premium Conversion | 100 | 455 |
+| Conversion           | Required Gems | VEs received |
+| -------------------- | ------------- | ------------ |
+| Daily Gem Conversion | 28            | 151          |
+| Reward Conversion    | 39            | 168          |
+| Value Conversion     | 57            | 255          |
+| Premium Conversion   | 100           | 455          |
 
 Dummy balances: 420 Gems, 3,850 VEs. Conversion is allowed only if `gems >= requiredGems`. On success, Gems decrease and VEs increase by the conversion values. **Verify these against the live page before submission.**
 
