@@ -1,11 +1,11 @@
-import { motion, useReducedMotion } from 'framer-motion'
-import heroArt from '../../assets/hero-art.svg'
-import InfoTip from './InfoTip.jsx'
-import { infoContent } from '../../data/exchangeData.js'
-import styles from './ExchangeHero.module.css'
+import { motion, useReducedMotion } from "framer-motion";
+import bannerIcon from "../../assets/banner-icon.png";
+import InfoTip from "./InfoTip.jsx";
+import { infoContent } from "../../data/exchangeData.js";
+import styles from "./ExchangeHero.module.css";
 
 export default function ExchangeHero() {
-  const reduceMotion = useReducedMotion()
+  const reduceMotion = useReducedMotion();
 
   return (
     <header className={styles.hero}>
@@ -23,12 +23,12 @@ export default function ExchangeHero() {
       </div>
       <motion.img
         className={styles.art}
-        src={heroArt}
+        src={bannerIcon}
         alt="A violet Gem dropping through a golden ring and becoming a VE coin"
         initial={reduceMotion ? false : { opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
       />
     </header>
-  )
+  );
 }

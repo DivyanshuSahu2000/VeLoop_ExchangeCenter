@@ -2,7 +2,7 @@
 
 A frontend redesign of the VELOOP Rewards **Exchange Center**, where users convert earned **Gems** into **VEs** through predefined reward conversions. It is a reward conversion experience, not a crypto swap: there are no prices, charts or trading controls.
 
-**Live demo:** (https://veloopexchangecenter.vercel.app/)
+**Live demo:** [https://veloop-exchange-center-eta.vercel.app/](https://veloop-exchange-center-eta.vercel.app/)
 
 ![Desktop](screenshots/desktop.png)
 
