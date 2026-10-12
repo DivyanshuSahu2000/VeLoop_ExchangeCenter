@@ -62,7 +62,7 @@
   }
 
   .art {
-    width: 420px;
-    align-self: flex-end;
+    width: 575px;
+    /* align-self: flex-end; */
   }
 }

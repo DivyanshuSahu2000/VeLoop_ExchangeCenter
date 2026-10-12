@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import { Check } from 'lucide-react'
+import successIcon from '../../assets/successIcon.png'
 import styles from './ConversionSuccess.module.css'
 
 const BURST_PARTICLES = Array.from({ length: 12 }, (_, index) => {
@@ -24,12 +24,11 @@ export default function ConversionSuccess({ option, onContinue }) {
             />
           ))}
         <motion.span
-          className={styles.check}
+          // className={styles.check}
           initial={reduceMotion ? false : { scale: 0.4, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: 'spring', stiffness: 260, damping: 16 }}
-        >
-          <Check size={38} strokeWidth={3} aria-hidden="true" />
+        ><img src={successIcon} alt="Check" width={100} height={100} />
         </motion.span>
       </div>
 
